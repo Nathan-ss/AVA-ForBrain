@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ForBrain
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.6.
@@ -25,3 +26,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+=======
+# AVA-ForBrain
+software for education
+>>>>>>> abe17ad4cc717dddded9219aa0007e11092e675a
