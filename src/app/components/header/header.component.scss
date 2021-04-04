@@ -1,6 +1,6 @@
 .header {
-    position: fixed;
     display: flex;
+    position: relative;
     justify-content: center;
     color: #3e5fe6;
     font-family: Arial, Helvetica, sans-serif;
@@ -8,6 +8,7 @@
 
 .header .container-brand {
     margin: 280px;
+    color: rgb(8, 8, 141);
     align-items: center;
 }
 
@@ -84,12 +85,4 @@
 
 .dropdown:hover .dropbtn {
     color: #0939f8;
-}
-
-//rodapé
-.baseboard {
-    position: fixed;
-    bottom: 0;
-    background-color: #3e5fe6;
-    color: ivory;
 }

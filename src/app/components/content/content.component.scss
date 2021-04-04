@@ -1,0 +1,29 @@
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: transparent;
+    }
+    
+    .progress {
+        height: 15px;
+        width: 400px;
+        background-color: #777;
+        position: relative;
+    }
+    
+    .progress .progress-bar {
+        position: absolute;
+        height: 100%;
+        background-color: #4959e6;
+        animation: progress-animation 6s infinite;
+    }
+    
+    @keyframes progress-animation {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 10%
+        }
+    }
