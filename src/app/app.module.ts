@@ -8,11 +8,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { InitialComponent } from './pages/initial/initial.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { HeaderComponent } from './components/header/header.component';
+import { BaseboardComponent } from './components/baseboard/baseboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    InitialComponent
+    InitialComponent,
+    HeaderComponent,
+    BaseboardComponent
   ],
   imports: [
     BrowserModule,
