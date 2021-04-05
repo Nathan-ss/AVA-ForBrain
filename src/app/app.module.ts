@@ -13,6 +13,8 @@ import { MatListModule } from '@angular/material/list';
 import { HeaderComponent } from './components/header/header.component';
 import { BaseboardComponent } from './components/baseboard/baseboard.component';
 import { ContentComponent } from './components/content/content.component';
+import { LoginComponent } from './pages/login/login.component';
+import { RegisterComponent } from './pages/register/register.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ContentComponent } from './components/content/content.component';
     InitialComponent,
     HeaderComponent,
     BaseboardComponent,
-    ContentComponent
+    ContentComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

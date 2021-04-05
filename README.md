@@ -6,6 +6,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Sobre nós
 
 - Equipe de programadores com o intuito de criar um software voltado para a educação
+
+
+
 __●__ ●
  _ █___█
  __ █__ █_
