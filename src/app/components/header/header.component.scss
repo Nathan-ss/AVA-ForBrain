@@ -9,6 +9,7 @@
 }
 
 .header .container-brand {
+    display: block;
     margin: 280px;
     color: rgb(8, 8, 141);
     align-items: center;
@@ -87,4 +88,11 @@
 
 .dropdown:hover .dropbtn {
     color: #0939f8;
+}
+
+.logo {
+    margin-right: 10px;
+    float: left;
+    height: 40%;
+    width: 40%;
 }
