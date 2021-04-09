@@ -1,0 +1,98 @@
+.header {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    color: #3e5fe6;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 50px;
+    font-size: 18px;
+}
+
+.header .container-brand {
+    display: block;
+    margin: 280px;
+    color: rgb(8, 8, 141);
+    align-items: center;
+}
+
+.header a {
+    margin-right: 8px;
+    text-decoration: none;
+    color: #3e5fe6;
+}
+
+.header a:hover {
+    color: #0939f8;
+}
+
+.links {
+    align-content: flex-end;
+}
+
+//button dropdow
+.dropbtn {
+    color: #3e5fe6;
+    font-size: 18px;
+    font: optional;
+    border: none;
+    background-color: transparent;
+    padding: 20px;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 360px;
+    z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 46px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+}
+
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+.dropdown:hover .dropbtn {
+    color: #0939f8;
+}
+
+.logo {
+    margin-right: 10px;
+    float: left;
+    height: 40%;
+    width: 40%;
+}
