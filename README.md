@@ -27,5 +27,7 @@ __●__ ●
 =======
 # AVA-ForBrain
 software for education
+<<<<<<< HEAD
 
+=======
 >>>>>>> abe17ad4cc717dddded9219aa0007e11092e675a

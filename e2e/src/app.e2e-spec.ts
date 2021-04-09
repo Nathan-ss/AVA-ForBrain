@@ -10,7 +10,11 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', async () => {
     await page.navigateTo();
+<<<<<<< HEAD
     expect(await page.getTitleText()).toEqual('AVA-ForBrain app is running!');
+=======
+    expect(await page.getTitleText()).toEqual('forBrain app is running!');
+>>>>>>> 2fe0510d4b5cc547bbb06f35fe4a041927b21c7d
   });
 
   afterEach(async () => {
