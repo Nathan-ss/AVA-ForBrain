@@ -1,33 +1,23 @@
-<<<<<<< HEAD
-# ForBrain
+# appfacu
+### Hi there 👋
+<img src="https://github.com/black-droid/AVA-ForBrain/blob/main/src/assets/logo%20brain%20branco.png" min-width="400px" max-width="400px" width="400px" align="right" alt="Computador">
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.6.
+<p align="left"> 
+  Esse projeto é a criação de um aplicativo destinado á educação.
+</p>
 
-## Sobre nós
+<p align="left">
+  💼 Ferramentas: <strong>VSCode, Webpack, Programas da Adobe, Git and GitHub.</strong>
+</p>
 
-- Equipe de programadores com o intuito de criar um software voltado para a educação
 
 
 
-__●__ ●
- _ █___█
- __ █__ █_
- __ █__ █
- __ ███____________█████ 　　　
- _█▒░░█_________██▓▒▒▓██ ☆
- █▒░●░░█___ ██▓▒██▓▒▒▓█　　 ★
- █░█▒░░██_ ██▓▒██▓▒░▒▓█
- _██▒░░██ ██▓▒░██▓▒░▒▓█ 　　　★
- ____█▒░██ ██▓▒░░ ████▓█
- ___█▒░██__██▓▓▒▒░░░██ 　 ★★
- ____█▒░██___████████████
- _____█▒░█▒▒▒▒▒▒▒▒▒▒▒▒█
- ______██████████████████.•°*”˜҈.•°*”˜҈.
 
-=======
-# AVA-ForBrain
-software for education
-<<<<<<< HEAD
+## 🚀💻 Technologies & Tools
 
-=======
->>>>>>> abe17ad4cc717dddded9219aa0007e11092e675a
+![JavaScript](https://img.shields.io/badge/-JavaScript-yellow?style=flat-square&logo=javascript)
+![TypeScript](https://img.shields.io/badge/-TypeScript-blue?style=flat-square&logo=typescript)
+![Angular](https://img.shields.io/badge/-Angular-red?style=flat-square&logo=angular)
+
+
