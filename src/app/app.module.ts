@@ -20,7 +20,7 @@ import { BaseboardComponent } from './components/baseboard/baseboard.component';
 
 import { LoginComponent     } from './pages/login/login.component';
 import { RegisterComponent  } from './pages/register/register.component';
-import { ContentInitialComponent } from './components/content/content-initial/content-initial/content-initial.component';
+import { ContentInitialComponent } from './components/content/content-initial/content-initial.component';
 
 
 @NgModule({
