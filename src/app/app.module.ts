@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { InitialComponent } from './pages/initial/initial.component';
 
 import { MatToolbarModule     } from '@angular/material/toolbar';
 import { MatSidenavModule     } from '@angular/material/sidenav';
@@ -15,11 +14,13 @@ import { MatListModule        } from '@angular/material/list';
 import {MatFormFieldModule    } from '@angular/material/form-field';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
+import { InitialComponent } from './pages/initial/initial.component';
 import { HeaderComponent    } from './components/header/header.component';
 import { BaseboardComponent } from './components/baseboard/baseboard.component';
-import { ContentComponent   } from './components/content/content.component';
+
 import { LoginComponent     } from './pages/login/login.component';
 import { RegisterComponent  } from './pages/register/register.component';
+import { ContentInitialComponent } from './components/content/content-initial/content-initial/content-initial.component';
 
 
 @NgModule({
@@ -28,9 +29,9 @@ import { RegisterComponent  } from './pages/register/register.component';
     InitialComponent,
     HeaderComponent,
     BaseboardComponent,
-    ContentComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    ContentInitialComponent
   ],
   imports: [
     BrowserModule,
