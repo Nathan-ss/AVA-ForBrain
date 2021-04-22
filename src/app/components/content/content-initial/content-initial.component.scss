@@ -1,16 +1,21 @@
-.container{
-    display: flexbox;
+.container-initial{
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    background-color: #ffff;
+
 }
 .fundo1{
     display:flex;
-
-
+    
+    
 }
+// imagem
 .fundo1 img{
-    max-width: 1920px;
+    max-width: 2000px;
     min-width: 500px;
 }
-
+//container de boas vindas
 .fundo1 .container-input-phrase{
     margin-top: 100px;
     max-width: 1920px;
@@ -56,6 +61,7 @@
     text-decoration: none;
   }
 
+//botao central de ancora
 .c-btn{
     display: flex;
     align-items: center;
@@ -68,10 +74,118 @@
     
 }
 .c-bellow{
-    margin-top: 450px;
-    max-width: 1920px;
+    margin-top: 380px;
+    max-width: 100%;
     min-width: 100%;
     position: absolute;
+    align-items: center;
     text-align: center;
     justify-content: center;
+
 }
+
+.c-btn .circle{
+    max-width: 1920px;
+    min-width: 80px;
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    height: 80px;
+    padding-top: 20px;
+    border-radius: 50px;
+}
+
+
+//sobre o projeto
+.container-about{
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-about .title{
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+
+}
+.container-about .title i{
+    color: #3e5fe6 ;
+    margin-right: 7px;
+    max-height: 80px;
+
+}
+.container-about .title h1{
+    padding-top: 18px;
+    font-size: 60px;
+    color: black;
+}
+
+.container-about .content-about{
+    display: flexbox;
+    margin-top: 120px;
+    margin-left: 150px;
+    margin-right: 90px;
+    justify-content: center;
+
+}
+.container-about .content-about p{
+    font-size: 17px;
+    color: black;
+    text-align: left;
+    margin-top: 40px;
+    
+
+}
+
+
+//sobre os membros
+
+.container-about-us{
+    
+    justify-content: center;
+    align-items: center;
+    
+}
+.container-members{
+    display: flexbox;
+    background-color: #3e5fe6;
+    padding-top: 5px;
+    margin-top: 100px;
+    
+}
+.members{
+    display: flexbox;
+    margin:50px;
+    margin-left: 100px;
+   
+    
+}
+
+.members .name-members img{
+    width: 230px;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: center;
+}
+
+.name-members{
+    display: flex;
+    
+}
+.name-members .name{
+    display: flexbox;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    text-align: center;
+
+}
+.name-members .name h1{
+    font-weight: 800px;
+    
+}
+.name-members .name i{
+    margin-right: 4px;
+    
+}
+
