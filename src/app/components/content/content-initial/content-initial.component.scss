@@ -189,3 +189,28 @@
     
 }
 
+//
+
+.container-service{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 280px;
+}
+.block-content{
+    justify-content: center;
+    color:white;
+    display:flexbox;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.block-content h4{
+    font-weight: 500;
+}
+.block-content p{
+    font-size: 10px;
+}
+.block-content i{
+    color: white;
+}
