@@ -1,0 +1,56 @@
+@import "~@ng-select/ng-select/themes/default.theme.css";
+
+.conteiner-register{
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subtitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container-content{
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+.container-content .block{
+    background-color: #e8e8e8;
+    width: 500px;
+    height: 500px;
+    box-shadow: 5px 10px 0px 0px #4465be;
+    justify-content: center;
+    align-items: center;
+}
+.container-content .block .conteudo .name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container-content .block .conteudo .container-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.container-content .block .conteudo .container-input .inputs{
+    display: block;
+
+
+ 
+}
+.container-content .block .conteudo{
+    display: flexbox;
+    margin-top: 20px;
+    
+
+}

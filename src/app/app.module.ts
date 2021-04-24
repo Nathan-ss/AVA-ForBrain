@@ -13,6 +13,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatListModule        } from '@angular/material/list';
 import {MatFormFieldModule    } from '@angular/material/form-field';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { NgSelectModule } from '@ng-select/ng-select';
 
 import { InitialComponent } from './pages/initial/initial.component';
 import { HeaderComponent    } from './components/header/header.component';
@@ -21,6 +22,7 @@ import { BaseboardComponent } from './components/baseboard/baseboard.component';
 import { LoginComponent     } from './pages/login/login.component';
 import { RegisterComponent  } from './pages/register/register.component';
 import { ContentInitialComponent } from './components/content/content-initial/content-initial.component';
+import { ContentRegisterComponent } from './components/content/content-register/content-register.component';
 
 
 @NgModule({
@@ -31,7 +33,8 @@ import { ContentInitialComponent } from './components/content/content-initial/co
     BaseboardComponent,
     LoginComponent,
     RegisterComponent,
-    ContentInitialComponent
+    ContentInitialComponent,
+    ContentRegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +47,8 @@ import { ContentInitialComponent } from './components/content/content-initial/co
     MatStepperModule,
     MatFormFieldModule,
     ReactiveFormsModule, 
-    FormsModule
+    FormsModule,
+    NgSelectModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

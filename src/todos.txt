@@ -1,0 +1,6 @@
+telas(){
+    registre-se
+    Login
+    home
+    
+}

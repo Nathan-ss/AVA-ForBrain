@@ -1,0 +1,39 @@
+<span class="container-register">
+
+    <div class="title"> Criar Conta</div>
+    <div class="subtitle">
+        Já tem uma conta
+        <a>login</a>
+    </div>
+
+    <span class="container-content">
+        <div class="block">
+            <div class="conteudo">
+                <div class="name">
+                    <input type="text">
+                    <input type="text">
+                </div>
+                <div class="container-input">
+                    <div class="inputs">
+                        <input type="text"><br>
+                        <input type="text"><br>
+                        <input type="text">
+                    </div>
+                </div>
+                <div>
+                    <label>Data de Nacimento</label>
+                    <div>
+                        <ng-select [name]="cities" bindLabel="name" placeholder="Select city"
+                            [(ngModel)]="selectedCity">
+                        </ng-select>
+                        <p>
+                            Selected city: {{selectedCity | json}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </span>
+
+</span>
