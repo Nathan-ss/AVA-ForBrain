@@ -7,17 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContentRegisterComponent implements OnInit {
 
-  cities = [
-    {id: 1, name: 'Vilnius'},
-    {id: 2, name: 'Kaunas'},
-    {id: 3, name: 'Pavilnys', disabled: true},
-    {id: 4, name: 'Pabradė'},
-    {id: 5, name: 'Klaipėda'}
-];
-selectedCity: any;
-    selectedCityIds: string[];
-    selectedCityId: number;
-    selectedUserIds: number[];
+  selectDate: number;
+
+  days = [
+      { id: 1, name: 'Volvo' },
+      { id: 2, name: 'Saab' },
+      { id: 3, name: 'Opel' },
+      { id: 4, name: 'Audi' },
+  ];
 
   constructor() { }
 

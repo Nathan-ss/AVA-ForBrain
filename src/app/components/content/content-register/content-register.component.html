@@ -23,12 +23,12 @@
                 <div>
                     <label>Data de Nacimento</label>
                     <div>
-                        <ng-select [name]="cities" bindLabel="name" placeholder="Select city"
-                            [(ngModel)]="selectedCity">
+                        <!--Using ng-option and for loop-->
+                        <ng-select [(ngModel)]="selectDate" class="selection-date-day">
+                            <ng-option *ngFor="let day of days" [value]="day.id" class="option-date">{{day.name}}</ng-option>
                         </ng-select>
-                        <p>
-                            Selected city: {{selectedCity | json}}
-                        </p>
+
+                        <!--Using items input-->
                     </div>
                 </div>
             </div>
