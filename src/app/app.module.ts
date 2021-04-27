@@ -8,10 +8,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatToolbarModule     } from '@angular/material/toolbar';
 import { MatSidenavModule     } from '@angular/material/sidenav';
-import {MatStepperModule      } from '@angular/material/stepper';
+import { MatStepperModule     } from '@angular/material/stepper';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatListModule        } from '@angular/material/list';
-import {MatFormFieldModule    } from '@angular/material/form-field';
+import { MatFormFieldModule   } from '@angular/material/form-field';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { NgSelectModule } from '@ng-select/ng-select';
 

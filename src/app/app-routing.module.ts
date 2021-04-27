@@ -15,6 +15,7 @@ const routes: Routes = [
   {
     path: "pages/login",
     component: LoginComponent,
+ 
   },
   {
     path: "pages/register",
@@ -30,7 +31,10 @@ const routes: Routes = [
     component: FormTeacherComponent
   },
 
+
 ];
+
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
