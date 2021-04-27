@@ -23,7 +23,9 @@ import { LoginComponent     } from './pages/login/login.component';
 import { RegisterComponent  } from './pages/register/register.component';
 import { ContentInitialComponent } from './components/content/content-initial/content-initial.component';
 import { ContentRegisterComponent } from './components/content/content-register/content-register.component';
-
+import { ContentLoginComponent } from './components/content/content-login/content-login.component';
+import { FormStudentComponent } from './components/content/content-login/content-form/form-student/form-student.component';
+import { FormTeacherComponent } from './components/content/content-login/content-form/form-teacher/form-teacher.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,11 @@ import { ContentRegisterComponent } from './components/content/content-register/
     LoginComponent,
     RegisterComponent,
     ContentInitialComponent,
-    ContentRegisterComponent
+    ContentRegisterComponent,
+    ContentLoginComponent,
+    FormStudentComponent,
+    FormTeacherComponent
+
   ],
   imports: [
     BrowserModule,
