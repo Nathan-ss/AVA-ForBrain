@@ -24,7 +24,7 @@
     text-align: left;
 }
 .fundo1 .container-input-phrase .itens-initial{
-    display: flexbox;
+    
     margin-right: 150px;
     float: right;
 }
@@ -97,7 +97,8 @@
 
 //sobre o projeto
 .container-about{
-    display: flexbox;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -121,7 +122,8 @@
 }
 
 .container-about .content-about{
-    display: flexbox;
+    display: flex;
+    flex-direction: column;
     margin-top: 120px;
     margin-left: 150px;
     margin-right: 90px;
@@ -147,14 +149,18 @@
     
 }
 .container-members{
-    display: flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-color: #3e5fe6;
     padding-top: 5px;
     margin-top: 100px;
     
 }
 .members{
-    display: flexbox;
+    display: flex;
+    flex-direction: column;
     margin:50px;
     margin-left: 100px;
    
@@ -173,7 +179,8 @@
     
 }
 .name-members .name{
-    display: flexbox;
+    display: flex;
+    flex-direction: column;
     margin-left: 10px;
     margin-right: 10px;
     color: white;
@@ -193,14 +200,13 @@
 
 .container-service{
     display: flex;
+    justify-content: center;
     align-items: center;
     text-align: center;
-    margin-left: 280px;
+    
 }
 .block-content{
-    justify-content: center;
     color:white;
-    display:flexbox;
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
