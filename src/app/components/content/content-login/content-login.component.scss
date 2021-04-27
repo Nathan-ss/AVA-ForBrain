@@ -1,0 +1,76 @@
+.container-login{
+    background-color: #396bde;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+.content-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.block{
+
+    background-color: white;
+    width: 400px;
+    height: 500px;
+    box-shadow: 3px 8px 5px 5px rgb(27, 62, 154);
+}
+.button{
+    display: flex;
+    margin-top: 70px;
+}
+.button button{
+    width: 200px;
+}
+.button .btn-student{
+    background: #fff;
+    border: 0px;  
+    border-radius: 20px 20px 0px 0px;
+    font-family: Arial;
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+.button .btn-teacher{
+    background: #0f41b4;
+    border: 0px;  
+    border-radius: 20px 20px 0px 0px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+.brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.brand img{
+    max-width: 80px;
+    
+}
+.brand h1{
+    padding-top: 20px;
+    font-size: 20px;
+    
+}
+.brand strong{
+    color:#396bde;
+}
+.container-form{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+
+}
+h5{
+    font-size: 20px;
+}

@@ -1,0 +1,39 @@
+form{
+    margin-top: 50px;
+}
+input{
+    width: 250px;
+    height: 30px;
+    background-color: rgb(230, 230, 230);
+    border-radius: 20px 20px;
+    border: 0px;
+}
+.checkbox{
+    width: 20px;
+    float: left;
+}
+
+.btn {
+
+    background: #396bde ;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 40px 10px 40px;
+    text-decoration: none;
+    border: 0px;
+  }
+  
+  .btn:hover {
+    background: #0f41b4;
+    text-decoration: none;
+  }
+  .container-btn{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
