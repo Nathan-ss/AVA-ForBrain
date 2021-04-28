@@ -25,9 +25,11 @@
                     <div>
                         <!--Using ng-option and for loop-->
                         <ng-select [(ngModel)]="selectDate" class="selection-date-day">
-                            <ng-option *ngFor="let day of days" [value]="day.id" class="option-date">{{day.name}}</ng-option>
+                            <ng-option *ngFor="let day of days" [value]="day.name" class="option-date">{{day.name}}</ng-option>
                         </ng-select>
-
+                        <br>
+                        
+                        {{selectDate}}
                         <!--Using items input-->
                     </div>
                 </div>

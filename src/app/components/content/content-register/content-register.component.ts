@@ -6,8 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./content-register.component.scss']
 })
 export class ContentRegisterComponent implements OnInit {
-
-  selectDate: number;
+  selectDate: number ;
 
   days = [
       { id: 1, name: 'Volvo' },
