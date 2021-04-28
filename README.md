@@ -1,6 +1,6 @@
-# yuri esteve aqui
+# AVA-forBrain
 ### Hi there 👋 lalal
-<img src="https://github.com/black-droid/AVA-ForBrain/blob/main/src/assets/logo%20brain%20branco.png" min-width="400px" max-width="400px" width="400px" align="right" alt="Computador">
+<img src="assets/images/logo c.png" min-width="400px" max-width="400px" width="400px" align="right" alt="Computador">
 
 <p align="left"> 
   Esse projeto é a criação de um aplicativo destinado á educação.
