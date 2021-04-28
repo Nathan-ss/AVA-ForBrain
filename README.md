@@ -1,6 +1,6 @@
 # AVA-forBrain
 ### Hi there 👋 lalal
-<img src="assets/images/logo c.png" min-width="400px" max-width="400px" width="400px" align="right" alt="Computador">
+<img src="src/assets/images/logo c.png" min-width="400px" max-width="400px" width="400px" align="right" alt="Computador">
 
 <p align="left"> 
   Esse projeto é a criação de um aplicativo destinado á educação.
