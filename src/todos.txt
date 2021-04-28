@@ -1,0 +1,18 @@
+todos(){
+    initial{ 
+        responsividade,
+        form, 
+        mapa, 
+        botao-cursos(retornar uma lista de cursos)(Eudy)
+        }
+    registre-se (yuri)
+    Login(Nathan)
+    DOT.NET-conexão com o banco Mysql(Atyla)
+    Criar duas rotas{login,cadastre-se}
+    home
+    
+}
+
+*07/04 - entrega.
+
+obs: tempo extra pro video.

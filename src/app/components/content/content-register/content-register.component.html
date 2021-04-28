@@ -1,0 +1,41 @@
+<span class="container-register">
+
+    <div class="title"> Criar Conta</div>
+    <div class="subtitle">
+        Já tem uma conta
+        <a>login</a>
+    </div>
+
+    <span class="container-content">
+        <div class="block">
+            <div class="conteudo">
+                <div class="name">
+                    <input type="text">
+                    <input type="text">
+                </div>
+                <div class="container-input">
+                    <div class="inputs">
+                        <input type="text"><br>
+                        <input type="text"><br>
+                        <input type="text">
+                    </div>
+                </div>
+                <div>
+                    <label>Data de Nacimento</label>
+                    <div>
+                        <!--Using ng-option and for loop-->
+                        <ng-select [(ngModel)]="selectDate" class="selection-date-day">
+                            <ng-option *ngFor="let day of days" [value]="day.name" class="option-date">{{day.name}}</ng-option>
+                        </ng-select>
+                        <br>
+                        
+                        {{selectDate}}
+                        <!--Using items input-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </span>
+
+</span>

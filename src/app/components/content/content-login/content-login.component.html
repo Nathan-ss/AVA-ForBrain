@@ -1,0 +1,21 @@
+
+<body class="container-login">
+
+    <div class="content-login">
+        <div class="button">
+            <button class="btn-student" id="btn-student" (click)="changeStudent()">aluno</button>
+            <button class="btn-teacher" id="btn-teacher" (click)="changeTeacher()">professor</button>
+        </div>
+        <div class="block">
+            <div class="brand">
+                <img src="/assets/images/logo c.png" alt="">
+                <h1><strong>AVA</strong>-ForBrain</h1>
+            </div>
+            <div class="container-form">
+                <h5>{{ titulo }}</h5>
+                <div *ngIf="actStudent;"><app-form-student></app-form-student></div>
+                <div *ngIf="actTeacher;"><app-form-teacher></app-form-teacher></div>
+            </div>
+        </div>
+    </div>
+</body>
