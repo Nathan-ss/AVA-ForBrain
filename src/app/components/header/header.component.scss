@@ -1,5 +1,5 @@
 .header {
-    display: flex;
+    display: auto;
     position: relative;
     justify-content: center;
     color: #3e5fe6;
@@ -10,6 +10,8 @@
 
 .header .container-brand {
     display: flex;
+    justify-items: center;
+    justify-content: center;
     margin: 280px;
     color: black;
     align-items: center;
@@ -36,9 +38,9 @@
 }
 
 .links {
-    align-content: flex-end;
+    display: flex;
+    float: inline-end;
 }
-
 // ------------------------------- trabalhe no botao aqui
 
 //button dropdow
