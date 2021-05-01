@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 
 
@@ -14,6 +14,7 @@ export class ContentLoginComponent implements OnInit {
   colorTeacher: string = "#0f41b4";
   actStudent: boolean = true;
   actTeacher: boolean = null;
+
 
   changeStudent(){
     this.titulo =  "login aluno";
@@ -42,6 +43,7 @@ export class ContentLoginComponent implements OnInit {
   constructor( ) { }
 
   ngOnInit(): void {
+    
   }
 
 

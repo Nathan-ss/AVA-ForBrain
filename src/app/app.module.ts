@@ -16,6 +16,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
+
 import { InitialComponent } from './pages/initial/initial.component';
 import { HeaderComponent    } from './components/header/header.component';
 import { BaseboardComponent } from './components/baseboard/baseboard.component';
@@ -28,6 +29,7 @@ import { ContentLoginComponent } from './components/content/content-login/conten
 import { FormStudentComponent } from './components/content/content-login/content-form/form-student/form-student.component';
 import { FormTeacherComponent } from './components/content/content-login/content-form/form-teacher/form-teacher.component';
 import { HomeComponent } from './pages/home/home.component';
+import { ContentHomeComponent } from './components/content/content-home/content-home.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import { HomeComponent } from './pages/home/home.component';
     ContentLoginComponent,
     FormStudentComponent,
     FormTeacherComponent,
-    HomeComponent
+    HomeComponent,
+    ContentHomeComponent,
+
 
   ],
   imports: [
@@ -58,7 +62,8 @@ import { HomeComponent } from './pages/home/home.component';
     ReactiveFormsModule, 
     FormsModule,
     NgSelectModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
