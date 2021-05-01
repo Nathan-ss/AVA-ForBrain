@@ -14,6 +14,7 @@ import { MatListModule        } from '@angular/material/list';
 import { MatFormFieldModule   } from '@angular/material/form-field';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { NgSelectModule } from '@ng-select/ng-select';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { InitialComponent } from './pages/initial/initial.component';
 import { HeaderComponent    } from './components/header/header.component';
@@ -55,6 +56,7 @@ import { FormTeacherComponent } from './components/content/content-login/content
     ReactiveFormsModule, 
     FormsModule,
     NgSelectModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

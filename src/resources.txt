@@ -1,2 +1,3 @@
 ng add @angular/material
 npm install --save @ng-select/ng-select
+npm install @angular/flex-layout
