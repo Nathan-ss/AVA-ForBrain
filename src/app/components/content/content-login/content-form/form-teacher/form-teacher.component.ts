@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-form-teacher',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormTeacherComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
-
+  goHomePage() {
+    this.router.navigate(['/Home-page']);
+}
 }

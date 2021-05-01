@@ -27,6 +27,7 @@ import { ContentRegisterComponent } from './components/content/content-register/
 import { ContentLoginComponent } from './components/content/content-login/content-login.component';
 import { FormStudentComponent } from './components/content/content-login/content-form/form-student/form-student.component';
 import { FormTeacherComponent } from './components/content/content-login/content-form/form-teacher/form-teacher.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { FormTeacherComponent } from './components/content/content-login/content
     ContentRegisterComponent,
     ContentLoginComponent,
     FormStudentComponent,
-    FormTeacherComponent
+    FormTeacherComponent,
+    HomeComponent
 
   ],
   imports: [

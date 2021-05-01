@@ -6,6 +6,7 @@ import { RegisterComponent } from './pages/register/register.component';
 import { InitialComponent } from './pages/initial/initial.component';
 import { FormTeacherComponent } from './components/content/content-login/content-form/form-teacher/form-teacher.component';
 import { FormStudentComponent } from './components/content/content-login/content-form/form-student/form-student.component';
+import { HomeComponent } from './pages/home/home.component';
 
 const routes: Routes = [
   {
@@ -28,9 +29,12 @@ const routes: Routes = [
   },
   {
     path: "form-Teacher", 
-    component: FormTeacherComponent
+    component: FormTeacherComponent,
   },
-
+  {
+    path: "Home-page", 
+    component: HomeComponent
+  },
 
 ];
 

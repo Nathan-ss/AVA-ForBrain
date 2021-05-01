@@ -10,9 +10,12 @@ input{
 }
 .checkbox{
     width: 20px;
+    
     float: left;
 }
-
+h4{
+    padding-top: 5px;
+}
 .btn {
 
     background: #396bde ;
@@ -36,4 +39,15 @@ input{
       flex-direction: column;
       justify-content: center;
       align-items: center;
+  }
+
+  .icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .icons i{
+      margin-left: 5px;
+      color: rgb(77, 77, 77);
+      margin-right: 5px;
   }

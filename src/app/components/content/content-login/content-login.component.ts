@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+
 
 
 
@@ -39,18 +39,11 @@ export class ContentLoginComponent implements OnInit {
     
   }
 
-  constructor( private router: Router) { }
+  constructor( ) { }
 
   ngOnInit(): void {
   }
 
-  goFormStudent() {
-    this.router.navigate(['/form-Student']);
-}
-  goFormTeacher() {
-  this.router.navigate(['/Form-Teacher']);
-  
-  
-}
+
 
 }

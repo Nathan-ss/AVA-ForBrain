@@ -37,3 +37,16 @@ input{
       justify-content: center;
       align-items: center;
   }
+ h4{
+    padding-top: 5px;
+}
+ .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .icons i{
+    margin-left: 5px;
+    color: rgb(77, 77, 77);
+    margin-right: 5px;
+}

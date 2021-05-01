@@ -5,6 +5,17 @@
     <input type="password" id="senha" name="" value="" placeholder="Senha"><br><br>
     <input type="checkbox" class="checkbox"> <h4>manter conectado</h4><br>
     <div class="container-btn">
-        <button type="submit" class="btn">Login</button>
+        <button (click) = "goHomePage()" type="submit" class="btn" >Login</button>
+    </div>
+    <div style="display: flex; margin-top: 20px;">
+        <div style="background-color: rgb(75, 75, 75); width: 90px; height: 1px; margin-top: 10px;"></div>
+        <h5 style="margin-left: 5px; margin-right: 5px;"> ou entre com</h5>
+        <div style="background-color: rgb(75, 75, 75); width: 90px; height: 1px; margin-top: 10px;"></div>
+    </div>
+    <div class="icons">
+        <a><i class="fab fa-google fa-2x"></i></a>
+        <a><i class="fab fa-facebook fa-2x"></i></a>
+        <a><i class="fab fa-linkedin fa-2x"></i></a>
+        <a><i class="fab fa-twitter-square fa-2x"></i></a>
     </div>
 </form>
