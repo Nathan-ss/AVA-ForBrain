@@ -6,4 +6,11 @@ import { Injectable } from '@angular/core';
 export class AccountService {
 
   constructor() { }
+
+  login(user : any){
+    return new Promise((resolve) =>{
+      window.localStorage.setItem('token','my-token');
+      return true;
+    })
+  }
 }
