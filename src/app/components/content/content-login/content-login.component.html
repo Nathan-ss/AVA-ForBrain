@@ -3,8 +3,8 @@
 
     <div class="content-login">
         <div class="button">
-            <button class="btn-student" id="btn-student" (click)="changeStudent()">aluno</button>
-            <button class="btn-teacher" id="btn-teacher" (click)="changeTeacher()">professor</button>
+            <button class="btn-student" id="btn-student" (click)="changeStudent()" routerLink="Form-student" routerLinkActive="active" >aluno</button>
+            <button class="btn-teacher" id="btn-teacher" (click)="changeTeacher()" routerLink="Form-teacher" routerLinkActive="active">professor</button>
         </div>
         <div class="block">
             <div class="brand">
@@ -13,8 +13,9 @@
             </div>
             <div class="container-form">
                 <h5>{{ titulo }}</h5>
-                <div *ngIf="actStudent;"><app-form-student></app-form-student></div>
-                <div *ngIf="actTeacher;"><app-form-teacher></app-form-teacher></div>
+                <router-outlet></router-outlet>
+                <!-- <div *ngIf="actStudent;"><app-form-student></app-form-student></div>
+                <div *ngIf="actTeacher;"><app-form-teacher></app-form-teacher></div> -->
             </div>
         </div>
     </div>

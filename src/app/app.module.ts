@@ -15,12 +15,12 @@ import { MatFormFieldModule   } from '@angular/material/form-field';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 
 import { InitialComponent } from './pages/initial/initial.component';
 import { HeaderComponent    } from './components/header/header.component';
 import { BaseboardComponent } from './components/baseboard/baseboard.component';
-
 import { LoginComponent     } from './pages/login/login.component';
 import { RegisterComponent  } from './pages/register/register.component';
 import { ContentInitialComponent } from './components/content/content-initial/content-initial.component';
@@ -63,6 +63,7 @@ import { ContentHomeComponent } from './components/content/content-home/content-
     FormsModule,
     NgSelectModule,
     FlexLayoutModule,
+    MatSnackBarModule
 
   ],
   providers: [],

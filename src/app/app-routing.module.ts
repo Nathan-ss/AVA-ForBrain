@@ -7,6 +7,7 @@ import { InitialComponent } from './pages/initial/initial.component';
 import { FormTeacherComponent } from './components/content/content-login/content-form/form-teacher/form-teacher.component';
 import { FormStudentComponent } from './components/content/content-login/content-form/form-student/form-student.component';
 import { HomeComponent } from './pages/home/home.component';
+import { AuthenticationGuard } from './components/content/content-login/services/authentication.guard';
 
 const routes: Routes = [
   {
@@ -14,26 +15,24 @@ const routes: Routes = [
     component: InitialComponent,
   },
   {
-    path: "pages/login",
+    path: "Home-page", 
+    component: HomeComponent,
+    children : [],
+    canActivate : [AuthenticationGuard]
+  },
+  {
+    path: "login-page",
     component: LoginComponent,
+    children : [
+      {path:'Form-teacher', component: FormTeacherComponent},
+      {path:'Form-student', component: FormStudentComponent}
+    ]
  
   },
   {
-    path: "pages/register",
+    path: "register-page",
     component: RegisterComponent,
 
-  },
-  {
-    path: "form-Student", 
-    component: FormStudentComponent,
-  },
-  {
-    path: "form-Teacher", 
-    component: FormTeacherComponent,
-  },
-  {
-    path: "Home-page", 
-    component: HomeComponent
   },
 
 ];

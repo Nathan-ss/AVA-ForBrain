@@ -12,8 +12,9 @@ export class ContentLoginComponent implements OnInit {
   titulo: string = "login aluno";
   colorStudent: string = "white";
   colorTeacher: string = "#0f41b4";
-  actStudent: boolean = true;
-  actTeacher: boolean = null;
+  // actStudent: boolean = true;
+  // actTeacher: boolean = null;
+  //metodo de esconder component
 
 
   changeStudent(){
@@ -24,9 +25,9 @@ export class ContentLoginComponent implements OnInit {
     document.getElementById("btn-teacher").style.color = "#ffff";
     this.colorTeacher = "#0f41b4";
     this.colorStudent = "#ffff";
-    this.actStudent =  true;
-    this.actTeacher = false;
-    
+    // this.actStudent =  true;
+    // this.actTeacher = false;
+    //metodo de esconder component
   }
   changeTeacher(){
     this.titulo =  "login professor";
@@ -34,8 +35,9 @@ export class ContentLoginComponent implements OnInit {
     document.getElementById("btn-student").style.color = "#ffff";
     document.getElementById("btn-teacher").style.background = "#ffff";
     document.getElementById("btn-teacher").style.color = "black";
-    this.actStudent = false;
-    this.actTeacher =  true;
+    // this.actStudent = false;
+    // this.actTeacher =  true;
+    //metodo de esconder component
 
     
   }
