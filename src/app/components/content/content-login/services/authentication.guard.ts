@@ -7,7 +7,9 @@ import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, Router } from
 })
 export class AuthenticationGuard implements CanActivate {
 
-  constructor( private router : Router ){
+ 
+
+  constructor( private router : Router){
 
   }
   
@@ -18,6 +20,7 @@ export class AuthenticationGuard implements CanActivate {
     }
     else{
       this.router.navigate(['login-page']);
+
       return false;
     }
   }
