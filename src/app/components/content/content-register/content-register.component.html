@@ -1,25 +1,30 @@
 <span class="container-register">
 
+
     <div class="title"> Criar Conta</div>
     <div class="subtitle">
         Já tem uma conta?
-        <a>Login</a>
+        <a routerLink="register-page">
+            Login
+        </a>
     </div>
 
     <span class="container-content">
         <div class="block">
             <div class="conteudo">
                 <div class="name">
-                    <input type="text" id="nome" name="" value="" placeholder="Primeiro Nome"><br>
-                    <input type="text" id="sobrenome" name="" value="" placeholder="Sobrenome"><br>
+                    <input type="text" id="nome" name="" value="" placeholder="Nome e Sobrenome"><br>
+                </div>  
+                <div class="email">
+                    <input type="text" id="email" name="" value="" placeholder="E-mail"><br>
                 </div>
-                <div class="container-input">
-                    <div class="inputs">
-                        <input type="text" id="email" name="" value="" placeholder="E-mail"><br>
-                        <input type="text" id="senha" name="" value="" placeholder="Senha"><br>
-                        <input type="text" id="c/senha" name="" value="" placeholder="Confirme sua senha"><br>
-                    </div>
+                <div class="password">
+                    <input type="text" id="senha" name="" value="" placeholder="Senha"><br>
                 </div>
+                <div class="c-password">
+                    <input type="text" id="c/senha" name="" value="" placeholder="Confirme sua senha"><br>
+                </div>
+
                 <div>
                     <label>Data de Nacimento:</label>
                     <div>
@@ -32,10 +37,30 @@
                         {{selectDate}}
                         <!--Using items input-->
                     </div>
+                </div>   
+
+                <div class="checkbox">
+                    <input type="checkbox" class="checkbox"> <h4>Masculino</h4><br>
+                    <input type="checkbox" class="checkbox"> <h4>Feminino</h4><br>
+                    <input type="checkbox" class="checkbox"> <h4>Outro</h4><br>
                 </div>
+
             </div>
         </div>
 
     </span>
+
+   <div class="write" style="display: flex; margin-top: 5px;">
+        <div style="background-color: rgb(75, 75, 75); width: 90px; height: 1px; margin-top: -9px;"></div>
+        <h5 style="margin-left: 5px; margin-right: 5px;"> ou entre com</h5>
+        <div style="background-color: rgb(75, 75, 75); width: 90px; height: 1px; margin-top: -9px;"></div>
+   </div>
+
+    <div class="icons">
+        <a><i class="fab fa-google fa-2x"></i></a>
+        <a><i class="fab fa-facebook fa-2x"></i></a>
+        <a><i class="fab fa-linkedin fa-2x"></i></a>
+        <a><i class="fab fa-twitter-square fa-2x"></i></a>
+    </div>
 
 </span>

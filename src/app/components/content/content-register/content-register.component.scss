@@ -11,25 +11,25 @@
     justify-content: center;
     align-items: center;
     font-size: 50px;
-    margin: 30px;
+    margin: 20px;
 }
 .subtitle{
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 20px;
-    margin: 20px;
+    margin: 15px;
 }
 .container-content{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px;
+    margin: 30px;
 }
 .container-content .block{
     background-color: #e8e8e8;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     box-shadow: 5px 10px 0px 0px #4465be;
     justify-content: center;
     align-items: center;
@@ -38,17 +38,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
-.container-content .block .conteudo .container-input{
+.container-content .block .conteudo .email{
     display: flex;
     justify-content: center;
     align-items: center;
- 
+    margin-top: 20px;
 }
-.container-content .block .conteudo .container-input .inputs{
-    display: block;
-
+.container-content .block .conteudo .password{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.container-content .block .conteudo .c-password{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
 }
 .container-content .block .conteudo {
     display: flexbox;
@@ -58,4 +65,33 @@
 .selection-date-day{
     background-color: white;
     margin-top: 8px;
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons i{
+    margin-left: 5px;
+    color: rgb(77, 77, 77);
+    margin-right: 5px;
+    margin-block-end: 30px;
+}
+.checkbox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.write{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
 }
