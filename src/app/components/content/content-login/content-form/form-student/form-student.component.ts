@@ -15,7 +15,7 @@ export class FormStudentComponent implements OnInit {
   msg_success: string = 'Login efetuado com sucesso'; 
   
   login = {
-    name:'',
+    dataUser:'',
     password:''
   }
   constructor(  
@@ -39,7 +39,7 @@ export class FormStudentComponent implements OnInit {
       });
       this.router.navigate(['/Home-page']);
     } catch (error) {
-
+      console.log(error);
     }
   }
 }
