@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
+import { AccountService } from '../../services/account.service';
 
 
 @Component({
@@ -9,11 +11,34 @@ import { Router } from '@angular/router';
 })
 export class FormTeacherComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  msg_success: string = 'Login efetuado com sucesso'; 
+  
+  login = {
+    dataUser:'',
+    password:''
+  }
+
+  constructor(
+    private accountService : AccountService,
+    private router: Router, 
+    private snackBar: MatSnackBar
+    ) { }
 
   ngOnInit(): void {
   }
-  goHomePage() {
-    this.router.navigate(['/Home-page']);
-}
+  
+  async onSubmit(){
+    try {
+      const result = await this.accountService.login(this.login);
+      console.log(`login efetuado com sucesso: ${result}`);
+      this.snackBar.open(this.msg_success, 'X', {
+        duration:2000,
+        horizontalPosition:'right' ,
+        verticalPosition: 'top',
+      });
+      this.router.navigate(['/Home-page']);
+    } catch (error) {
+      console.log(error);
+    }
+  }
 }

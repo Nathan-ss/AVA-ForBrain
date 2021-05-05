@@ -24,7 +24,7 @@ const routes: Routes = [
     path: "login-page",
     component: LoginComponent,
     children : [
-      {path:'', component: FormStudentComponent},
+      {path:"", component: FormStudentComponent},
       {path:'Form-teacher', component: FormTeacherComponent}
     ]
  

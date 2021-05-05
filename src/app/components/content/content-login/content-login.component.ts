@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 
 
@@ -12,9 +12,9 @@ export class ContentLoginComponent implements OnInit {
   titulo: string = "login aluno";
   colorStudent: string = "white";
   colorTeacher: string = "#0f41b4";
-  // actStudent: boolean = true;
-  // actTeacher: boolean = null;
-  //metodo de esconder component
+   actStudent: boolean = true;
+   actTeacher: boolean = null;
+  
 
 
   changeStudent(){
@@ -25,9 +25,10 @@ export class ContentLoginComponent implements OnInit {
     document.getElementById("btn-teacher").style.color = "#ffff";
     this.colorTeacher = "#0f41b4";
     this.colorStudent = "#ffff";
-    // this.actStudent =  true;
-    // this.actTeacher = false;
-    //metodo de esconder component
+    
+     this.actStudent =  true;
+     this.actTeacher = false;
+    
   }
   changeTeacher(){
     this.titulo =  "login professor";
@@ -35,8 +36,8 @@ export class ContentLoginComponent implements OnInit {
     document.getElementById("btn-student").style.color = "#ffff";
     document.getElementById("btn-teacher").style.background = "#ffff";
     document.getElementById("btn-teacher").style.color = "black";
-    // this.actStudent = false;
-    // this.actTeacher =  true;
+     this.actStudent = false;
+     this.actTeacher =  true;
     //metodo de esconder component
 
     
