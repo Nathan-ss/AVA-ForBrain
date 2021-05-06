@@ -36,7 +36,7 @@ export class FormTeacherComponent implements OnInit {
         horizontalPosition:'right' ,
         verticalPosition: 'top',
       });
-      this.router.navigate(['/Home-page']);
+      this.router.navigate(['/Entry-Teacher-page']);
     } catch (error) {
       console.log(error);
     }

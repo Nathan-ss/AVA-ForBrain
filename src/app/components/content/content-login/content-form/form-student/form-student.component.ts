@@ -5,6 +5,7 @@ import { AccountService } from '../../services/account.service';
 
 
 
+
 @Component({
   selector: 'app-form-student',
   templateUrl: './form-student.component.html',
@@ -21,10 +22,12 @@ export class FormStudentComponent implements OnInit {
   constructor(  
     private accountService : AccountService,
     private router: Router, 
-    private snackBar: MatSnackBar
+    private snackBar: MatSnackBar,
+    
     ) { }
 
   ngOnInit(): void {
+
   }
 
 
@@ -37,9 +40,10 @@ export class FormStudentComponent implements OnInit {
         horizontalPosition:'right' ,
         verticalPosition: 'top',
       });
-      this.router.navigate(['/Home-page']);
+      this.router.navigate(['/Entry-Student-page']);
     } catch (error) {
       console.log(error);
     }
   }
+
 }

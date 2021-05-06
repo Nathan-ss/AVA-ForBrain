@@ -29,8 +29,10 @@ import { ContentRegisterComponent } from './components/content/content-register/
 import { ContentLoginComponent } from './components/content/content-login/content-login.component';
 import { FormStudentComponent } from './components/content/content-login/content-form/form-student/form-student.component';
 import { FormTeacherComponent } from './components/content/content-login/content-form/form-teacher/form-teacher.component';
-import { HomeComponent } from './pages/home/home.component';
 import { ContentHomeComponent } from './components/content/content-home/content-home.component';
+import { EntryStdComponent } from './pages/entry-std/entry-std.component';
+import { EntryTcComponent } from './pages/entry-tc/entry-tc.component';
+import { PainelComponent } from './components/content/painel/painel.component';
 
 @NgModule({
   declarations: [
@@ -45,8 +47,10 @@ import { ContentHomeComponent } from './components/content/content-home/content-
     ContentLoginComponent,
     FormStudentComponent,
     FormTeacherComponent,
-    HomeComponent,
     ContentHomeComponent,
+    EntryStdComponent,
+    EntryTcComponent,
+    PainelComponent,
 
 
   ],

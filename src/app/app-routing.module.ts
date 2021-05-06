@@ -6,19 +6,33 @@ import { RegisterComponent } from './pages/register/register.component';
 import { InitialComponent } from './pages/initial/initial.component';
 import { FormTeacherComponent } from './components/content/content-login/content-form/form-teacher/form-teacher.component';
 import { FormStudentComponent } from './components/content/content-login/content-form/form-student/form-student.component';
-import { HomeComponent } from './pages/home/home.component';
 import { AuthenticationGuard } from './components/content/content-login/services/authentication.guard';
+import { EntryTcComponent } from './pages/entry-tc/entry-tc.component';
+import { EntryStdComponent } from './pages/entry-std/entry-std.component';
+import { ContentHomeComponent } from './components/content/content-home/content-home.component';
+import { PainelComponent } from './components/content/painel/painel.component';
 
 const routes: Routes = [
   {
     path: "",
     component: InitialComponent,
   },
+  
   {
-    path: "Home-page", 
-    component: HomeComponent,
+    path: "Entry-Teacher-page", 
+    component: EntryTcComponent,
     children : [],
     canActivate : [AuthenticationGuard]
+  },
+  {
+  path: "Entry-Student-page", 
+  component: EntryStdComponent ,
+  children : [
+    {path:"Home", component: ContentHomeComponent},
+    {path:"Painel", component: PainelComponent },
+    { path: '', redirectTo: 'Home', pathMatch: 'full' },
+  ],
+  canActivate : [AuthenticationGuard]
   },
   {
     path: "login-page",
