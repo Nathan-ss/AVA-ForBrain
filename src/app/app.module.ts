@@ -33,6 +33,7 @@ import { ContentHomeComponent } from './components/content/content-home/content-
 import { EntryStdComponent } from './pages/entry-std/entry-std.component';
 import { EntryTcComponent } from './pages/entry-tc/entry-tc.component';
 import { PainelComponent } from './components/content/painel/painel.component';
+import { RecoverPasswordComponent } from './components/content/recover-password/recover-password.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { PainelComponent } from './components/content/painel/painel.component';
     EntryStdComponent,
     EntryTcComponent,
     PainelComponent,
+    RecoverPasswordComponent,
 
 
   ],

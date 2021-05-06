@@ -10,11 +10,14 @@ input{
 }
 .checkbox{
     width: 20px;
+    
     float: left;
 }
-
+h4{
+    font-size: 12px;
+    padding-top: 5px;
+}
 .btn {
-
     background: #396bde ;
     -webkit-border-radius: 28;
     -moz-border-radius: 28;
@@ -25,8 +28,7 @@ input{
     padding: 10px 40px 10px 40px;
     text-decoration: none;
     border: 0px;
-  }
-  
+  } 
   .btn:hover {
     background: #0f41b4;
     text-decoration: none;
@@ -37,16 +39,20 @@ input{
       justify-content: center;
       align-items: center;
   }
- h4{
-    padding-top: 5px;
-}
- .icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
- .icons i{
-    margin-left: 5px;
-    color: rgb(77, 77, 77);
-    margin-right: 5px;
-}
+
+  .icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .icons i{
+      margin-left: 5px;
+      color: rgb(77, 77, 77);
+      margin-right: 5px;
+  }
+  .recover-password a{
+      float: right;
+      font-size: 12px;
+      margin-right: 5px;
+      
+  }

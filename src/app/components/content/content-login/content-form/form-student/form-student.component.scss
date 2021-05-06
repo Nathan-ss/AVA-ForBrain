@@ -14,6 +14,7 @@ input{
     float: left;
 }
 h4{
+    font-size: 12px;
     padding-top: 5px;
 }
 .btn {
@@ -48,4 +49,10 @@ h4{
       margin-left: 5px;
       color: rgb(77, 77, 77);
       margin-right: 5px;
+  }
+  .recover-password a{
+      float: right;
+      font-size: 12px;
+      margin-right: 5px;
+      
   }

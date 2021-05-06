@@ -11,6 +11,7 @@ import { EntryTcComponent } from './pages/entry-tc/entry-tc.component';
 import { EntryStdComponent } from './pages/entry-std/entry-std.component';
 import { ContentHomeComponent } from './components/content/content-home/content-home.component';
 import { PainelComponent } from './components/content/painel/painel.component';
+import { RecoverPasswordComponent } from './components/content/recover-password/recover-password.component';
 
 const routes: Routes = [
   {
@@ -38,8 +39,11 @@ const routes: Routes = [
     path: "login-page",
     component: LoginComponent,
     children : [
-      {path:"", component: FormStudentComponent},
-      {path:'Form-teacher', component: FormTeacherComponent}
+      {path:"Form-student", component: FormStudentComponent},
+      {path:'Form-teacher', component: FormTeacherComponent},
+      {path:'recover-password',component: RecoverPasswordComponent},
+      { path: '', redirectTo: 'Form-student', pathMatch: 'full' },
+      
     ]
  
   },

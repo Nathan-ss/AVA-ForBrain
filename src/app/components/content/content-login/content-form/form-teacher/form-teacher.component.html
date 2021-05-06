@@ -3,6 +3,7 @@
     <input type="text" id="usuario" name="data-user" value="" placeholder="Email ou Nome " [(ngModel)]= "login.dataUser" required><br>
     <label for="">Senha:</label><br>
     <input type="password" id="senha" name="password" value="" placeholder="Senha" [(ngModel)]= "login.password" required><br><br>
+    <div class="recover-password"><a href="login-page/recover-password"> esqueceu a senha?</a></div>
     <input type="checkbox" class="checkbox"> <h4>manter conectado</h4><br>
     <div class="container-btn">
         <button  type="submit" class="btn" [disabled] = "form.form.invalid">Login</button>
