@@ -66,7 +66,7 @@
     background-color: white;
     margin-top: 8px;
 }
-.icons {
+.icons{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,13 +78,15 @@
     margin-block-end: 30px;
 }
 .container-content .block .conteudo .checkbox{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 5px;
 }
 
-.btn {
+.btn{
     background: #396bde;
     font-family: Arial;
     color: #ffffff;
@@ -92,13 +94,14 @@
     padding: 10px 40px 10px 40px;
     text-decoration: none;
     border: 0px;
-  } 
+} 
 
-  .button{
+.button{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: -20px;
 }
 
 .write{
@@ -107,9 +110,10 @@
     align-items: center;
 }
 
-h4{
+h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 5px;
+    padding-top: 0px;
+    font-size: 14px;
 }
