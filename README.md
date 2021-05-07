@@ -4,7 +4,7 @@
 <img src="https://github.com/black-droid/AVA-ForBrain/blob/main/src/assets/logo%20brain%20branco.png" min-width="400px" max-width="400px" width="400px" align="right" alt="Computador">
 =======
 # AVA-forBrain
-### Hi there 👋 lalal
+### Hi there 👋 Eudy esteve aqui
 <img src="src/assets/images/logo c.png" min-width="400px" max-width="400px" width="400px" align="right" alt="Computador">
 >>>>>>> 05eb8d920f873804b8c34cf06aefda10d4bdcff2
 
