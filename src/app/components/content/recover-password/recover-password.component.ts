@@ -10,7 +10,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
   styleUrls: ['./recover-password.component.scss']
 })
 export class RecoverPasswordComponent implements OnInit {
-  email : any;
+  email : '';
 
   constructor( private snackBar: MatSnackBar, ) { }
 
