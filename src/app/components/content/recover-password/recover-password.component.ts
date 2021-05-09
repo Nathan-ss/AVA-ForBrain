@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { EmailValidator } from '@angular/forms';
+import { EmailValidator, FormsModule, FormControl } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
 
@@ -12,13 +12,15 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 export class RecoverPasswordComponent implements OnInit {
   email : '';
 
-  constructor( private snackBar: MatSnackBar, ) { }
+  constructor( private snackBar: MatSnackBar,) { }
 
   ngOnInit(): void {
 
   }
 
-  showMensage(){
+  showMensage(form){
+    console.log(form)
+
     try {
       
         this.snackBar.open("Email enviado", 'X', {

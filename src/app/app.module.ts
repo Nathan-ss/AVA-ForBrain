@@ -35,6 +35,7 @@ import { EntryTcComponent } from './pages/entry-tc/entry-tc.component';
 import { PainelComponent } from './components/content/painel/painel.component';
 import { RecoverPasswordComponent } from './components/content/recover-password/recover-password.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,6 +54,7 @@ import { RecoverPasswordComponent } from './components/content/recover-password/
     EntryTcComponent,
     PainelComponent,
     RecoverPasswordComponent,
+    
 
 
   ],
