@@ -1,4 +1,30 @@
-<p>Tela de entrada do user/aluno!</p>
-<button routerLink = "Home">btn 1</button>
-<button routerLink = "Painel">btn 2</button>
-<router-outlet></router-outlet>
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side" >
+        <a (click)="drawer.toggle(); action(true)"><i class="fas fa-times"></i> {{pagename}}</a>
+        <a routerLink = "Home" (click) = "submitname('Home')"> <p>Home</p> </a>
+        <a routerLink = "Painel" (click) = "submitname('Painel')"> <p>Painel</p> </a>
+
+    </mat-drawer>
+    <mat-toolbar class="header mat-elevation-z1">
+        <a *ngIf="actbtn;" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon"  mat-button (click)="drawer.toggle();action(false)">
+            <i class="fas fa-bars fa-1x"></i>
+        </a>
+        <span class="container-brand">
+            <img class="logo" src="../assets/images/logo c.png">
+            <strong class="color">AVA</strong>-ForBrain
+        </span>
+        <span class="example-spacer"></span>
+        <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+            <i class="fas fa-bell fa-2x"></i>
+        </button>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+            <i class="fas fa-user fa-2x"></i>
+        </button>
+      </mat-toolbar>
+
+  
+
+    <p>Tela de entrada do user/aluno!</p>
+
+    <router-outlet></router-outlet>
+</mat-drawer-container>
