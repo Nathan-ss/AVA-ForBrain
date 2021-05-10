@@ -1,8 +1,10 @@
-<mat-drawer-container class="example-container" autosize>
-    <mat-drawer #drawer class="example-sidenav" mode="side" >
+<mat-drawer-container class="container" autosize>
+    <mat-drawer #drawer class="sidenav" mode="side" >
         <a (click)="drawer.toggle(); action(true)"><i class="fas fa-times"></i> {{pagename}}</a>
-        <a routerLink = "Home" (click) = "submitname('Home')"> <p>Home</p> </a>
-        <a routerLink = "Painel" (click) = "submitname('Painel')"> <p>Painel</p> </a>
+        <div>
+            <button class="sidebtn" id="home" routerLink = "Home" (click) = "submitname('Home'); select('home')"> <i class="fas fa-home"></i>Home </button>
+            <button class="sidebtn" id="painel" routerLink = "Painel" (click) = "submitname('Painel'); select('painel')"><i class="fas fa-credit-card"></i> Painel </button>
+        </div>
 
     </mat-drawer>
     <mat-toolbar class="header mat-elevation-z1">
