@@ -12,14 +12,39 @@
   }
   
   .sidenav {
-    
+    display: flex;
+    flex-direction: column;
     width: 200px;
   }
-  .sidenav div{
+  .sidenav .title{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    font-size: 30px;
+  }
+  .title i{
+    margin-left: 20px;
+    color:#0939f8;
+  }
+  .title i:hover{
+    color:#04ff64;
+  }
+  .sidenav .btnPages{
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 30px;
+    
+  }
+  .sidenav .btnPages i{
+    float: left;
+    margin-right: 15px;
+    
+  }
+  .sidenav .btnPages p{
+    float: left;
     
   }
   .sidebtn {
@@ -28,10 +53,13 @@
     color: #2875c7;
     border: none;
     font-size: 20px;
-    background: #ffffff;
+    background:transparent;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
     border-radius: 0px;
+  }
+  .sidebtn i{
+    color: #000000;
   }
   
   .sidebtn:hover {
@@ -46,15 +74,14 @@
   }
   .header .container-brand {
     display: flex;
-    justify-items: center;
     justify-content: center;
     align-items: center;
+    width: 100%;
     color: black;
     
 }
 .header .container-brand img{
     max-width: 60px;
-    margin-left: 500px;
 
 }
 .example-spacer {
@@ -66,4 +93,11 @@
 .header .container-brand .brand{
     color: #000000;
     font-family:Arial, Helvetica, sans-serif;
+}
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
 }

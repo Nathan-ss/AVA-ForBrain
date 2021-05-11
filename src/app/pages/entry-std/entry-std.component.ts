@@ -34,7 +34,7 @@ export class EntryStdComponent implements OnInit {
     console.log(pages[0])
 
     while (n != numberPages) {
-      document.getElementById(pages[n]).style.backgroundColor = "#ffff";
+      document.getElementById(pages[n]).style.backgroundColor = "transparent";
       document.getElementById(pages[n]).style.color = "#2875c7";
       n =+ 1;
     }

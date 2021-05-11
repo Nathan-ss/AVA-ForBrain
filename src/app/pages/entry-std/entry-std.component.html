@@ -1,9 +1,11 @@
 <mat-drawer-container class="container" autosize>
     <mat-drawer #drawer class="sidenav" mode="side" >
-        <a (click)="drawer.toggle(); action(true)"><i class="fas fa-times"></i> {{pagename}}</a>
-        <div>
-            <button class="sidebtn" id="home" routerLink = "Home" (click) = "submitname('Home'); select('home')"> <i class="fas fa-home"></i>Home </button>
-            <button class="sidebtn" id="painel" routerLink = "Painel" (click) = "submitname('Painel'); select('painel')"><i class="fas fa-credit-card"></i> Painel </button>
+        <div class="title">
+            <a (click)="drawer.toggle(); action(true)"><i class="fas fa-times"></i> {{pagename}}</a>
+        </div>
+        <div class="btnPages">
+            <button class="sidebtn" id="home" routerLink = "Home" (click) = "submitname('Home'); select('home')"> <i class="fas fa-home"></i><p> Home </p></button>
+            <button class="sidebtn" id="painel" routerLink = "Painel" (click) = "submitname('Painel'); select('painel')"><i class="fas fa-credit-card"></i> <p> Painel </p></button>
         </div>
 
     </mat-drawer>
@@ -23,10 +25,6 @@
             <i class="fas fa-user fa-2x"></i>
         </button>
       </mat-toolbar>
-
-  
-
-    <p>Tela de entrada do user/aluno!</p>
 
     <router-outlet></router-outlet>
 </mat-drawer-container>
