@@ -11,20 +11,19 @@
     </mat-drawer>
     <mat-toolbar class="header mat-elevation-z1">
         <a *ngIf="actbtn;" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon"  mat-button (click)="drawer.toggle();action(false)">
-            <i class="fas fa-bars fa-1x"></i>
+            <i class="material-icons fa-lg" style="font-weight: bolder;">menu</i>
         </a>
         <span class="container-brand">
             <img class="logo" src="../assets/images/logo c.png">
             <strong class="color">AVA</strong>-ForBrain
         </span>
         <span class="example-spacer"></span>
-        <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-            <i class="fas fa-bell fa-2x"></i>
-        </button>
-        <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <a>
+            <i class="fas fa-bell fa-lg"></i>
+        </a>
+        <button class="btn-circle">
             <i class="fas fa-user fa-2x"></i>
         </button>
       </mat-toolbar>
-
     <router-outlet></router-outlet>
 </mat-drawer-container>

@@ -12,6 +12,7 @@ import { MatSidenavModule     } from '@angular/material/sidenav';
 import { MatStepperModule     } from '@angular/material/stepper';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatListModule        } from '@angular/material/list';
+import { MatTabsModule } from '@angular/material/tabs';
 import { MatFormFieldModule   } from '@angular/material/form-field';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { NgSelectModule } from '@ng-select/ng-select';
@@ -34,6 +35,10 @@ import { EntryStdComponent } from './pages/entry-std/entry-std.component';
 import { EntryTcComponent } from './pages/entry-tc/entry-tc.component';
 import { PainelComponent } from './components/content/painel/painel.component';
 import { RecoverPasswordComponent } from './components/content/recover-password/recover-password.component';
+import { ContentCoursesComponent } from './components/content/content-courses/content-courses.component';
+import { ContentSpeechesComponent } from './components/content/content-speeches/content-speeches.component';
+import { ContentLanguagesComponent } from './components/content/content-languages/content-languages.component';
+
 
 
 @NgModule({
@@ -54,6 +59,9 @@ import { RecoverPasswordComponent } from './components/content/recover-password/
     EntryTcComponent,
     PainelComponent,
     RecoverPasswordComponent,
+    ContentCoursesComponent,
+    ContentSpeechesComponent,
+    ContentLanguagesComponent,
     
 
 
@@ -73,7 +81,8 @@ import { RecoverPasswordComponent } from './components/content/recover-password/
     NgSelectModule,
     FlexLayoutModule,
     MatSnackBarModule,
-    HttpClientModule
+    HttpClientModule,
+    MatTabsModule
 
   ],
   providers: [],

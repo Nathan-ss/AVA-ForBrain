@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
 import { AccountService } from '../../services/account.service';
+import { FormsModule, FormControl } from '@angular/forms';
 
 
 
@@ -31,7 +32,7 @@ export class FormStudentComponent implements OnInit {
   }
 
 
-  async onSubmit(){
+  async onSubmit(form){
     try {
       const result = await this.accountService.login(this.login);
       console.log(`login efetuado com sucesso: ${result}`);

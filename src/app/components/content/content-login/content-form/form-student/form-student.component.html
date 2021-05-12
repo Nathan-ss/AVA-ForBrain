@@ -1,8 +1,10 @@
-<form (ngSubmit) = "onSubmit()" #form = "ngForm" >
+<form (ngSubmit) = "onSubmit(form)" #form = "ngForm" >
     <label for="">Usuario:</label><br>
-    <input type="text" id="usuario" name="data-user" value="" placeholder="Email ou Nome " [(ngModel)]= "login.dataUser" required><br>
+    <input type="text" id="usuario" formControlName="userName" name="data-user" value="" placeholder="Email ou Nome " [(ngModel)]= "login.dataUser" autofocus required><br>
+   
     <label for="">Senha:</label><br>
-    <input type="password" id="senha" name="password" value="" placeholder="Senha" [(ngModel)]= "login.password" required><br><br>
+    <input type="password" id="senha" name="password" value="" placeholder="Senha" [(ngModel)]= "login.password" autofocus required><br><br>
+
     <div class="recover-password"><a href="login-page/recover-password"> esqueceu a senha?</a></div>
     <input type="checkbox" class="checkbox"> <h4>manter conectado</h4><br>
     <div class="container-btn">

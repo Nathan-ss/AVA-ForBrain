@@ -11,6 +11,22 @@
             <div class="content">
                 <h1>Atividades Complementares</h1>
                 <h3>Acesse cursos e Palestras Gratuitas fornecidas pela faculdade</h3>
+                <mat-tab-group class="container-tabs" color="primary">
+                    <mat-tab class="content-itens"  label="Tudo"> 
+                        <div class="space">
+                            <app-content-courses></app-content-courses>
+                        </div>
+                        <div class="space">
+                            <app-content-speeches></app-content-speeches>
+                        </div>
+                        <div class="space">
+                            <app-content-languages></app-content-languages>
+                        </div>
+                    </mat-tab>
+                    <mat-tab class="content-itens"  label="Cursos"><app-content-courses></app-content-courses></mat-tab>
+                    <mat-tab class="content-itens"  label="Palestras"> <app-content-speeches></app-content-speeches> </mat-tab>
+                    <mat-tab class="content-itens"  label="Idiomas"> <app-content-languages></app-content-languages> </mat-tab>
+                  </mat-tab-group>
             </div>
         </div>
     </div>
