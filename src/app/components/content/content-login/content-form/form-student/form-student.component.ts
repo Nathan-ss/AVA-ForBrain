@@ -66,7 +66,8 @@ export class FormStudentComponent implements OnInit {
   
      if(userModel!==undefined&& userModel!==null){
         console.log('userModel: ', userModel)
-         this.router.navigate(['login-page/Form-student'])
+         //this.router.navigate(['Entry-Student-page/Home'])
+        
        }
        else{
          console.log('usuario não encontrado')

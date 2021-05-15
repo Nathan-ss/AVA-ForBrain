@@ -16,7 +16,7 @@
             <input type="password" formControlName="password" id="senha" name="password" placeholder="Senha">
             <div>
                 <small [hidden]="FormLoginUser.controls.password.valid||FormLoginUser.controls.password.untouched"
-                class="text">*Informar senha</small>
+                class="text" >*Informar senha</small>
             </div>
            
         </div>
@@ -26,7 +26,7 @@
         <input type="checkbox" class="checkbox">
         <h4>manter conectado</h4><br>
         <div class="container-btn">
-            <button [disabled]="!Valid()===true" (click)="onSubmit()" class="btn">Login</button>
+            <button [disabled]="!Valid()===true" (click)="onSubmit()" routerLink="/Entry-Student-page" class="btn">Login</button>
         </div>
         <div>
             <div style="display: flex; margin-top: 20px;">
