@@ -4,11 +4,9 @@
             <label for="">Usuario:</label><br>
             <input type="text" id="usuario" formControlName="usename" name="data-user" class="control-label small"
                 placeholder="Email ou Nome"/>
-                <div>
+                <div >
                     <small [hidden]="FormLoginUser.controls.usename.valid||FormLoginUser.controls.usename.untouched"
                     class="text-danger">*Informar Login</small><br>
-                    <br/>
-                    <br/>
                 </div>
         </div>
         <div class="form-group row">
