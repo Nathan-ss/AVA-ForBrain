@@ -1,29 +1,32 @@
-<mat-toolbar class="header mat-elevation-z1">
-    <!-- ------------------------------- trabalhe no botao aqui -->
-
+<div>
+    <mat-toolbar class="header mat-elevation-z1">
+        <!-- ------------------------------- trabalhe no botao aqui -->
     
-    <span class="dropdown">
-        <button class="dropbtn">Cursos</button>
-        <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-        </div>
-    </span>
-    <!-- ------------------------------- -->
-    <span class="container-brand">
-        <img class="logo" src="../assets/images/logo c.png">
-        <a routerLink="" class="brand"><strong class="color">AVA</strong>-ForBrain</a>
-
-    </span>
-    <span class="links">
-        <a routerLink="login-page">
-            Entrar
-        </a>
-        <a routerLink="register-page">
-            Cadastre-se
-        </a>
-    </span>
-
+        
+        <span class="dropdown">
+            <label>Cursos</label>
+            <div class="dropdown-content">
+                    <!--Using items input-->
+                    <ng-select [items]="Itenscursos" bindLabel="name" bindValue="id" [(ngModel)]="selectedCurso">
+                    </ng-select>
+                
+            </div>
+        </span>
+        <!-- ------------------------------- -->
+        <span class="container-brand">
+            <img class="logo" src="../assets/images/logo c.png">
+            <a routerLink="" class="brand"><strong class="color">AVA</strong>-ForBrain</a>
     
-</mat-toolbar>
+        </span>
+        <span class="links">
+            <a routerLink="login-page">
+                Entrar
+            </a>
+            <a routerLink="register-page">
+                Cadastre-se
+            </a>
+        </span>
+    
+        
+    </mat-toolbar>
+</div>

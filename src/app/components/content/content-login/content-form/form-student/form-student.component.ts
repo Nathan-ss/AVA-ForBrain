@@ -2,7 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
 import { AccountService } from '../../services/account.service';
-import { FormsModule, FormControl } from '@angular/forms';
+import { FormsModule, FormControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ServicesAvaForBrain } from '../../../global-rest-api/Api-services';
+import { Login, Usuarios } from '../../../entities/Entities';
 
 
 
@@ -15,36 +17,60 @@ import { FormsModule, FormControl } from '@angular/forms';
 export class FormStudentComponent implements OnInit {
  
   msg_success: string = 'Login efetuado com sucesso'; 
+  FormLoginUser:FormGroup;
+  valid:false
   
   login = {
     dataUser:'',
     password:''
   }
+  
   constructor(  
+    private FormBuild:FormBuilder,
+    private Services: ServicesAvaForBrain,
     private accountService : AccountService,
     private router: Router, 
     private snackBar: MatSnackBar,
     
     ) { }
 
-  ngOnInit(): void {
+  ngOnInit(){
+    this.creatForm();
 
   }
 
-
-  async onSubmit(form){
-    try {
-      const result = await this.accountService.login(this.login);
-      console.log(`login efetuado com sucesso: ${result}`);
-      this.snackBar.open(this.msg_success, 'X', {
-        duration:2000,
-        horizontalPosition:'right' ,
-        verticalPosition: 'top',
-      });
-      this.router.navigate(['/Entry-Student-page']);
-    } catch (error) {
-      console.log(error);
-    }
+  creatForm(){
+    this.FormLoginUser=this.FormBuild.group({
+      usename:['',Validators.required],
+      password:['',Validators.required]
+    })
   }
+  
+ Valid():boolean{
+   if(this.FormLoginUser.invalid){
+     return false;
+   }
+   else{
+     return true;
+   }
+ }
 
+
+   onSubmit(form: any=null){
+    
+   this.Services.GetAllUsuarios().subscribe(response=>{
+     const listUsarios= response.Usarios as Usuarios[]
+     console.log('user: ', listUsarios)
+     
+     const userModel = listUsarios.find(x=>x.name===this.FormLoginUser.value.usename &&x.password===this.FormLoginUser.value.password && x.perfil==='Aluno');
+  
+     if(userModel!==undefined&& userModel!==null){
+        console.log('userModel: ', userModel)
+         this.router.navigate(['login-page/Form-student'])
+       }
+       else{
+         console.log('usuario não encontrado')
+       }
+    })
+  }
 }
