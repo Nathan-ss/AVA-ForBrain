@@ -1,18 +1,4 @@
-todos(){
-    initial{ 
-        responsividade,
-        form, 
-        mapa, 
-        botao-cursos(retornar uma lista de cursos)(Eudy)
-        }
-    registre-se (yuri)
-    Login(Nathan)
-    DOT.NET-conexão com o banco Mysql(Atyla)
-    Criar duas rotas{login,cadastre-se}
-    home
-    
-}
+==>Na forma q quiser, apresentação falada, slide, um vídeo pre gravadoDo projeto ou na hora mesmo mostrar<==
 
-*07/04 - entrega.
 
-obs: tempo extra pro video.
+Dia 16 é o último dia q ele consegue estender mais
